@@ -36,12 +36,14 @@ const scrapeTranscriptions = async () => {
         $('article').each((i, element) => {
             const episodeTitle = $(element).find('header .entry-title a').text().trim();
             const transcriptions = [];
+            let lastAuthor = 'Unknown';
 
             $(element).find('.ts-segment').each((j, segment) => {
-                const author = $(segment).find('.ts-name').text().trim() || 'Unknown';
+                let author = $(segment).find('.ts-name').text().trim() || lastAuthor;
                 const citation = $(segment).find('.ts-text').text().trim();
                 if (citation) {
                     transcriptions.push({ author, citation });
+                    lastAuthor = author; // Update last known author
                 }
             });
 
