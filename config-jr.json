@@ -1,0 +1,11 @@
+{
+  "url": "https://podcasts.musixmatch.com/podcast/the-joe-rogan-experience-01hp4c6gdxz064yk1cyc1qym1k/episode/2156-jeremie-edouard-harris-01hyrd55csamajnd0914y2cb5q",
+  "resultFolder": "result2",
+  "selectors": {
+    "article": "div.css-175oi2r.r-13awgt0",
+    "title": "h1.css-1rynq56",
+    "segment": "div.css-175oi2r",
+    "author": "div.css-1rynq56.r-a023e6.r-rjixqe span.css-1qaijid",
+    "citation": "div.css-1qaijid + div.css-1qaijid"
+  }
+}

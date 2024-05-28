@@ -1,4 +1,11 @@
 {
   "url": "https://lexfridman.com/category/transcripts/",
-  "resultFolder": "result"
+  "resultFolder": "result",
+  "selectors": {
+    "article": "article",
+    "title": "header .entry-title a",
+    "segment": ".ts-segment",
+    "author": ".ts-name",
+    "citation": ".ts-text"
+  }
 }
